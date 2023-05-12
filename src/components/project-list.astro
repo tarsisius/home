@@ -1,0 +1,45 @@
+---
+const projects = [
+  {
+    description:
+      'Anonymous chat like secreto, where you can get feedback from anonymous that already have link to your room.',
+    link: 'http://ask.thp.my.id',
+    github: 'https://github.com/tarsisius/ask',
+  },
+  {
+    description: 'Reltime voting app to make simple poll.',
+    link: 'http://vote.thp.my.id',
+    github: 'https://github.com/tarsisius/vote',
+  },
+]
+---
+
+<section class='mt-20'>
+  <h2 class='text-xl font-semibold mb-4'>Projects</h2>
+  <p class='text-brand-white text-opacity-80'>Some of my OSS projects.</p>
+  <ul class='text-brand-white text-opacity-80 flex flex-col space-y-10 mt-12'>
+    {
+      projects.map((project) => (
+        <li class='flex flex-col space-y-4'>
+          <a
+            class='inline leading-5 underline font-medium text-brand-white text-opacity-100'
+            href={project.link}
+            target='_blank'
+            rel='noopener noreferrer external'>
+            {project.link.slice(7)}
+          </a>
+          <div class='text-gray-500 dark:text-gray-400 cursor-default'>
+            {project.description}
+          </div>
+          <a
+            class='inline leading-5 underline font-medium text-sm text-brand-white text-opacity-100'
+            href={project.github}
+            target='_self'
+            rel='noopener noreferrer external'>
+            github
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</section>
