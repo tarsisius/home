@@ -1,5 +1,5 @@
 <div align="left">
-  <h1>:computer: Vote</h1>
+  <h1>:computer: MyHome</h1>
 </div>
 
-**Introducing Vote** - This is aryo's personal web.
+**Introducing MyHome** - This is aryo's personal web.
